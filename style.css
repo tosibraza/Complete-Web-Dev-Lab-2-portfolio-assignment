@@ -1,0 +1,256 @@
+/* ================= Root Variables & Reset ================= */
+:root {
+    --primary-blue: #0047ab;
+    --light-bg: #f4f6f9;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --border-color: #0047ab;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* ================= Navigation Styles ================= */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--primary-blue);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 14px;
+    margin: 0 4px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ================= General Sections ================= */
+.section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+/* ================= About Section ================= */
+.profile-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    background-color: #dbeafe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 85%;
+    height: auto;
+}
+
+.about-section p {
+    font-size: 0.95rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ================= Skills Table Styling ================= */
+.skills-table {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: var(--card-bg);
+    border: 2px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.skills-table th, 
+.skills-table td {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #b6d4fe;
+}
+
+.skills-table th {
+    background-color: var(--primary-blue);
+    color: white;
+    font-weight: 600;
+}
+
+.skills-table tr:nth-child(even) {
+    background-color: #f8fbff;
+}
+
+/* ================= Projects Section ================= */
+.project-card {
+    background-color: var(--card-bg);
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 650px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ================= Contact Section & Form ================= */
+.contact-section {
+    background-color: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    max-width: 650px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: var(--primary-blue);
+}
+
+/* ================= Button Customization ================= */
+.submit-btn {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #003380;
+}
+
+.submit-btn:active {
+    transform: scale(0.99);
+}
+
+/* ================= Visual Separators ================= */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #e2e8f0;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* ================= Positioning: Back to Top Button ================= */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #003380;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Google Fonts Integration -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky-header">
+        <nav class="navbar">
+            <h1>My Portfolio</h1>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="section about-section">
+        <h2>About Me</h2>
+        <div class="profile-container">
+            <img src="toshif.jpeg" alt="Profile Picture" class="profile-img">
+        </div>
+        <p>Hello! My name is Mohammad Toshif Raza . I am learning web development and this is my first portfolio website.</p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- My Skills Section -->
+    <section id="skills" class="section skills-section">
+        <h2>My Skills</h2>
+        <table class="skills-table">
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Learning</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr class="divider">
+
+    <!-- My Projects Section -->
+    <section id="projects" class="section projects-section">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A simple HTML & CSS webpage.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Another awesome mini project.</p>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="section contact-section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </section>
+
+    <!-- Fixed Back to Top Button -->
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+
+</body>
+</html>
